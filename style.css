@@ -121,7 +121,7 @@ a:hover {
         font-size: 1.2rem;
     }
     .hero .first-btn, .hero .second-btn {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     } 
 }
 
@@ -220,6 +220,12 @@ input {
     }
     .contact_info {
         display: none;
+    }
+    input {
+        padding-right: 150px;
+    }
+    .form_btn {
+        padding: 15px 150px;
     }
 }
 
