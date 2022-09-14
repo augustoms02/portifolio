@@ -1,0 +1,228 @@
+/* GLOBAL CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --firstColor: rgba(255, 166, 136, 1);
+    --secondColor: white;
+    --thirdColor: rgba(188, 188, 189, 1);
+    --fourthColor: rgb(31, 29, 29);
+}
+body {
+    background-color: var(--fourthColor);
+}
+h1 {
+    font-size: 5rem;
+    color: var(--firstColor);
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 3.5rem;
+    color: var(--firstColor);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+}
+h4 {
+    font-size: 2rem;
+    color: var(--secondColor);
+    margin: 0;
+    text-transform: uppercase;
+}
+h6 {
+    color: var(--firstColor);
+}
+p {
+    font-size: 18px;
+    color: var(--thirdColor);
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: var(--fourthColor);
+}
+a:hover {
+    color: var(--secondColor);
+    text-decoration: none;
+}
+.btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 7px;
+}
+.first-btn {
+    background-color: var(--firstColor);
+    color: var(--fourthColor);
+    margin-right: 10px;
+    transition: 0.3s ease;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.first-btn:hover {
+    background-color: rgb(254, 184, 160);
+    color: var(--secondColor);
+}
+.second-btn {
+    color: var(--firstColor);
+    border: 1px solid var(--firstColor);
+    background: none;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.second-btn:hover {
+    border-color: var(--secondColor);
+    color: var(--secondColor);
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero_icons {
+    max-width: 50px;
+}
+.hero_icon {
+    width: 30px;
+    margin: 10px 0;
+}
+.icon_line {
+    height: 200px;
+}
+.hero-text p {
+    font-size: 1.3rem;
+    color: var(--thirdColor);
+    margin: 20px 0;
+    max-width: 400px;
+}
+.hero-img {
+    max-width: 50%;
+}
+
+@media screen and (max-width: 990px) {
+    .hero {
+        justify-content: space-evenly;
+    }
+    .hero-img {
+        display: none;
+    }
+}
+
+/* PROJETOS */
+#projects {
+    margin: 50px 0;
+}
+.projects {
+    margin-top: 60px;
+}
+.project {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.project img {
+    width: 50%;
+}
+
+@media screen and (max-width: 990px) {
+    .project {
+        flex-wrap: wrap;
+    }
+    .project_text {
+        margin-top: 30px;
+    }
+    .project img {
+        width: 80%;
+    }
+}
+
+/* CONTATO */
+
+#contact {
+    margin: 100px auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding-right: 80px;
+    border-right: 1px solid rgba(255, 166, 136, 0.7);
+}
+input {
+    background: transparent;
+    color: rgba(255, 166, 136, 0.8);
+    border: 2px solid rgba(255, 166, 136, 0.8);
+    border-radius: 5px;
+    padding: 10px 0;
+    padding-left: 30px;
+    padding-right: 200px;
+    margin: 15px 0;
+}
+#mensagem {
+    background: transparent;
+    color: rgba(255, 166, 136, 0.8);
+    border: 2px solid rgba(255, 166, 136, 0.8);
+    border-radius: 5px;
+    padding: 10px 0;
+    padding-left: 30px;
+    margin: 15px 0;
+}
+::placeholder {
+    color: var(--firstColor);
+    opacity: 80%;
+}
+.form_btn {
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 15px 200px;
+    margin-top: 10px;
+    margin-right: 0;
+}
+.contact_info {
+    margin-left: 80px;
+}
+.endereço p {
+    margin-bottom: 0px;
+}
+.social_media {
+    margin-top: 15px;
+}
+.media_icons img {
+    margin-right: 20px;
+    width: 40px;
+}
+
+@media screen and (max-width: 900px) {
+    form {
+        padding-right: 0;
+        border-right: none;
+    }    
+    .form_btn {
+        padding: 10px 180px;
+    }
+    .contact_info {
+        display: none;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgba(42, 43, 47, 1);
+}
+footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--secondColor);
+    font-weight: 800;
+    padding: 40px 0;
+}
+footer a:hover {
+    color: var(--firstColor);
+    text-decoration: none;
+}
