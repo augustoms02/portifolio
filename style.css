@@ -120,7 +120,11 @@ a:hover {
     .hero-text p {
         font-size: 1.2rem;
     }
-    .hero .first-btn, .hero .second-btn {
+    .hero .first-btn {
+        font-size: 0.9rem;
+        margin-right: 5px;
+    } 
+    .hero .second-btn {
         font-size: 0.9rem;
     } 
 }
