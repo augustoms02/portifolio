@@ -220,16 +220,13 @@ input {
         border-right: none;
     }    
     .form_btn {
-        padding: 10px 150px;
+        padding: 10px 130px;
     }
     .contact_info {
         display: none;
     }
     input {
-        padding-right: 150px;
-    }
-    .form_btn {
-        padding: 10px 150px;
+        padding-right: 130px;
     }
 }
 
