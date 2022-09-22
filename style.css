@@ -90,6 +90,7 @@ a:hover {
 }
 .hero_icon {
     width: 30px;
+    height: 30px;
     margin: 10px 0;
 }
 .icon_line {
@@ -244,6 +245,15 @@ input {
     }
     input {
         padding-right: 130px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form_btn {
+        padding: 10px 100px;
+    }
+    input {
+        padding-right: 100px;
     }
 }
 
